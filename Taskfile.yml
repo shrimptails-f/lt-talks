@@ -22,7 +22,7 @@ tasks:
   slide:
     desc: "MarpスライドをHTMLに出力する (例: task slide)"
     cmds:
-      - marp slide.md --html
+      - marp --server sample --html --theme ./sample/themes/sample.css
 
   codex:
     desc: "codexに権限をあたえて、コマンド確認させずに実行します。DevContainer(ガードレール付環境)内でのみ実行してください。"

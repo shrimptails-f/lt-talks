@@ -85,3 +85,30 @@ Markdownも**普通に**書ける
 HTMLを使えばデザインの幅が広がる
 
 </div>
+
+---
+
+## sample テーマ紹介
+
+<div style="display: flex; gap: 1.5rem; margin-top: 1rem;">
+<div style="flex: 1; border-left: 5px solid #FFBE00; padding: 1rem; background: #FFFDF0; border-radius: 0 8px 8px 0;">
+
+### カラーパレット
+
+- メイン: <span style="background:#FFBE00; color:#1a1a1a; padding:2px 10px; border-radius:4px; font-size:0.8em;">#FFBE00</span>
+- アクセント: <span style="background:#D93025; color:white; padding:2px 10px; border-radius:4px; font-size:0.8em;">#D93025</span>
+
+</div>
+<div style="flex: 1; border-left: 5px solid #D93025; padding: 1rem; background: #FFF5F5; border-radius: 0 8px 8px 0;">
+
+### 使い方
+
+```markdown
+---
+marp: true
+theme: sample
+---
+```
+
+</div>
+</div>

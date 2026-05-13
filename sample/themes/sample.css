@@ -1,0 +1,134 @@
+/* @theme sample */
+@import "default";
+
+section {
+  font-family: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "BIZ UDPGothic", sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-size: 28px;
+  padding: 60px 80px;
+}
+
+section::after {
+  color: #FFBE00;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 800;
+  color: #1a1a1a;
+  border-bottom: 5px solid #FFBE00;
+  padding-bottom: 14px;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #1a1a1a;
+  border-left: 5px solid #FFBE00;
+  padding-left: 14px;
+  margin-top: 0.8em;
+}
+
+h3 {
+  font-size: 1.15em;
+  font-weight: 700;
+  color: #D93025;
+}
+
+strong {
+  color: #D93025;
+  font-weight: 800;
+}
+
+em {
+  color: #FFBE00;
+  font-style: normal;
+  font-weight: 600;
+}
+
+code {
+  background-color: #FFF8E1;
+  color: #D93025;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.82em;
+  font-family: "Fira Code", "Consolas", monospace;
+}
+
+pre {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 8px;
+  padding: 24px 28px;
+  border-left: 5px solid #FFBE00;
+  font-size: 0.78em;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+table th {
+  background-color: #FFBE00;
+  color: #1a1a1a;
+  font-weight: 700;
+  padding: 10px 16px;
+}
+
+table td {
+  border-bottom: 1px solid #FFE680;
+  padding: 10px 16px;
+}
+
+table tr:nth-child(even) td {
+  background-color: #FFFDF0;
+}
+
+a {
+  color: #D93025;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+blockquote {
+  border-left: 4px solid #D93025;
+  background-color: #FFF5F5;
+  padding: 12px 20px;
+  margin: 16px 0;
+  color: #555;
+}
+
+/* タイトルスライド用クラス */
+section.title {
+  background: linear-gradient(150deg, #1a1a1a 0%, #2e2e2e 60%, #1a1a1a 100%);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 100px;
+}
+
+section.title h1 {
+  font-size: 2.8em;
+  color: #FFBE00;
+  border-bottom: 4px solid #D93025;
+  padding-bottom: 16px;
+}
+
+section.title h2 {
+  color: #f0f0f0;
+  border-left: 4px solid #D93025;
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+section.title p {
+  color: #aaaaaa;
+  font-size: 0.85em;
+}
