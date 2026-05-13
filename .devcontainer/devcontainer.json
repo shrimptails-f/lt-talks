@@ -1,0 +1,20 @@
+{
+  "name": "Lt Talks DevContainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "go",
+  "workspaceFolder": "/home/dev/backend",
+  "postCreateCommand": "task setup",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "editorconfig.editorconfig", // エディタを跨いだ共通設定ファイルをVsCodeで実行するのに必要
+        "ms-azuretools.vscode-docker", // VsCodeでのIntelliSenseやタブ補完用
+        "bierner.markdown-mermaid", // mermaidプレビュー用
+        "golang.go", // Go言語の拡張機能
+        "marp-team.marp-vscode", // スライドで表示できる拡張機能
+        "davidanson.vscode-markdownlint", // マークダウンlint
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

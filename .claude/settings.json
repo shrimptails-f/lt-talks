@@ -1,0 +1,26 @@
+{
+  "statusLine": {
+    "type": "command",
+    "command": "bash /home/dev/backend/.claude/statusline-command.sh"
+  },
+  "permissions": {
+    "allow": [
+      "Update(**)",
+      "Bash(git status:*)",
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(curl:*)",
+      "Bash(mysql:*)",
+      "Bash(printf:*)",
+      "Bash(codex:*)",
+      "Bash(python3:*)",
+      "Read(**)",
+      "Write(**)"
+    ],
+    "deny": [],
+    "ask": [],
+    "defaultMode": "acceptEdits"
+  }
+}

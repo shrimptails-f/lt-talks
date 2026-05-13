@@ -1,0 +1,22 @@
+.env
+.gitconfig
+
+# air(ホットリロード)で勝手に更新されるので除外
+/tmp/*
+__debug_bin*
+
+# ビルドファイル
+main
+
+# node
+node_modules
+
+#AIエージェント用の課題メモディレクトリ
+tasks
+tmp
+.claude-local
+settings.local.json
+.serena
+
+*.html
+*.pdf
