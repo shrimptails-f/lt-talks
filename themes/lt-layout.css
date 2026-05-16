@@ -1,0 +1,66 @@
+/* @theme lt-layout */
+@import "default";
+
+section {
+  font-family: "Noto Sans JP", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+  font-size: 28px;
+  line-height: 1.45;
+  padding: 56px 72px;
+}
+
+section::after {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.45em;
+}
+
+h2 {
+  color: light-dark(#246, #cee7ff);
+  font-size: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+h3 {
+  font-size: 1.12em;
+  margin-bottom: 0.55em;
+}
+
+p,
+ul,
+ol,
+pre,
+blockquote {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.2em;
+}
+
+li + li {
+  margin-top: 0.24em;
+}
+
+pre {
+  font-size: 0.74em;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+section > h1:first-child,
+section > h2:first-child,
+section > h3:first-child {
+  margin-top: 0;
+}
