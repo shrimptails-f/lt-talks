@@ -9,5 +9,8 @@
 ## 出力
 
 ```bash
-marp lt-talks/2026-05-go-db-testing/slide.md --html --theme-set ./themes/lt-layout.css -o lt-talks/2026-05-go-db-testing/slide.html
+marp lt-talks/2026-05-go-db-testing/slide.md \
+  --html \
+  --theme-set ./themes/lt-layout.css \
+  -o lt-talks/2026-05-go-db-testing/slide.html
 ```

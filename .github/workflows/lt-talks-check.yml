@@ -18,7 +18,7 @@ jobs:
           node-version: 22
 
       - name: Lint markdown in lt-talks
-        run: npx -y markdownlint-cli@0.45.0 "lt-talks/**/*.md"
+        run: npx -y markdownlint-cli@0.48.0 "lt-talks/**/*.md"
 
       - name: Validate Marp slides in lt-talks
         run: |
@@ -45,4 +45,3 @@ jobs:
             echo "Checking $slide"
             npx -y @marp-team/marp-cli@4.2.3 "$slide" --html "${theme_args[@]}" -o "$out_dir/$out_name"
           done
-
