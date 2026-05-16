@@ -1,0 +1,48 @@
+name: LT Talks Check
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  lt-talks-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Lint markdown in lt-talks
+        run: npx -y markdownlint-cli@0.45.0 "lt-talks/**/*.md"
+
+      - name: Validate Marp slides in lt-talks
+        run: |
+          set -euo pipefail
+
+          mapfile -d '' slides < <(find lt-talks -type f -name 'slide.md' -print0 | sort -z)
+          mapfile -d '' themes < <(find themes -type f -name '*.css' -print0 | sort -z)
+
+          if [ "${#slides[@]}" -eq 0 ]; then
+            echo "No slide.md files found under lt-talks"
+            exit 1
+          fi
+
+          theme_args=()
+          for theme in "${themes[@]}"; do
+            theme_args+=(--theme-set "$theme")
+          done
+
+          out_dir="$(mktemp -d)"
+
+          for slide in "${slides[@]}"; do
+            rel_dir="$(dirname "$slide")"
+            out_name="$(basename "$rel_dir").html"
+            echo "Checking $slide"
+            npx -y @marp-team/marp-cli@4.2.3 "$slide" --html "${theme_args[@]}" -o "$out_dir/$out_name"
+          done
+
