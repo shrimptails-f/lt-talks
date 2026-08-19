@@ -1,4 +1,4 @@
-FROM golang:1.25.2-alpine3.22
+FROM golang:1.26.0-alpine3.22
 
 ARG APP_ROOT
 
@@ -46,6 +46,8 @@ ENV SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt \
     REQUESTS_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt \
     NO_PROXY=localhost,127.0.0.1,::1,auth.openai.com
 
+ENV GOBIN=/usr/local/bin
+
 # Go ツール (root でインストール -> 全ユーザーで共有)
 RUN go install github.com/air-verse/air@latest && \
     go install github.com/go-delve/delve/cmd/dlv@latest && \
@@ -57,9 +59,13 @@ RUN go install github.com/air-verse/air@latest && \
 
 # 開発ユーザー作成
 RUN addgroup -g 1000 dev && \
-    adduser -D -u 1000 -G dev -s /bin/bash dev && \
-    chown -R dev:dev /home/dev && \
-    chown -R dev:dev /go/pkg/
+    adduser -D -u 1000 -G dev -s /bin/bash dev
+
+RUN mkdir -p /home/dev/go && \
+    chown dev:dev /home/dev/go
+
+ENV GOPATH=/home/dev/go
+ENV PATH="${GOPATH}/bin:${PATH}"
 
 # VS Code Server 用ディレクトリ
 # VS Code Server 用のディレクトリを事前に作成して権限を設定
