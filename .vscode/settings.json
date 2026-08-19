@@ -1,11 +1,6 @@
 {
   "markdown.marp.html": "all",
   "markdown.marp.themes": ["./themes/sample.css", "./themes/lt-layout.css"],
-  "markdownlint.config": {
-    "MD024": false,
-    "MD033": false,
-    "MD036": false
-  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
