@@ -245,3 +245,19 @@ func TestUpdateUserName(t *testing.T) {
 - 実DBテストは、工夫しないとデータ汚染で不安定になりやすい
 - テスト毎に**CREATE&DROP** する方法と、**トランザクション + ROLLBACK** する方法がある
 - 独立性や検証範囲を重視するならDB分離、速度や既存基盤との整合を重視するならトランザクション
+
+---
+
+## ご清聴ありがとうございました
+
+<!--
+  - 感想や質問があればXで声をかけてほしい
+  - QRコードは画面に残し、URLは読み上げない
+-->
+
+<div style="max-width: 420px; margin: 20px auto 0; padding: 22px 24px 18px; border: 2px solid #8795a5; border-radius: 18px; text-align: center; box-shadow: 0 8px 20px rgba(51, 79, 111, 0.14);">
+  <div style="font-size: 30px; font-weight: 700; margin-bottom: 10px;">X</div>
+  <div style="font-size: 20px; margin-bottom: 12px;">@shrimpTails_</div>
+  <img src="shrimptails-x-qr.png" alt="X profile QR code" style="width: 260px; height: 260px;">
+  <div style="font-size: 16px; margin-top: 10px;">x.com/shrimpTails_</div>
+</div>
