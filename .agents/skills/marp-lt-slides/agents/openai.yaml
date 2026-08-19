@@ -1,0 +1,4 @@
+interface:
+  display_name: "Marp LTスライド"
+  short_description: "Marpで見やすく話しやすいLTスライドを設計・編集"
+  default_prompt: "$marp-lt-slides を使って、画面表示と発表者用カンペを分けたMarpのLT資料を作成・改善してください。"
