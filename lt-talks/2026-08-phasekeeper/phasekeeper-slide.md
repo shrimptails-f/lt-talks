@@ -433,3 +433,29 @@ gates:
 - AIの外側にある**実行制御**も改善できる
 
 > 自分がAIへ繰り返し出している指示は、コードにできないか？
+
+---
+
+## ご清聴ありがとうございました
+
+<!--
+  - Phasekeeperの実装はGitHubで公開している
+  - 感想や質問があればXでも声をかけてほしい
+  - QRコードは画面に残し、ここではURLを読み上げない
+-->
+
+<div style="display: flex; justify-content: center; gap: 48px; margin-top: 20px;">
+  <div style="flex: 1; max-width: 430px; padding: 22px 24px 18px; border: 2px solid #4f86c6; border-radius: 18px; text-align: center; box-shadow: 0 8px 20px rgba(51, 79, 111, 0.14);">
+    <div style="font-size: 30px; font-weight: 700; margin-bottom: 10px;">GitHub</div>
+    <div style="font-size: 20px; margin-bottom: 12px;">Phasekeeper</div>
+    <img src="phasekeeper-github-qr.png" alt="Phasekeeper GitHub QR code" style="width: 220px; height: 220px;">
+    <div style="font-size: 16px; margin-top: 10px;">github.com/shrimptails-f/phasekeeper</div>
+  </div>
+
+  <div style="flex: 1; max-width: 430px; padding: 22px 24px 18px; border: 2px solid #8795a5; border-radius: 18px; text-align: center; box-shadow: 0 8px 20px rgba(51, 79, 111, 0.14);">
+    <div style="font-size: 30px; font-weight: 700; margin-bottom: 10px;">X</div>
+    <div style="font-size: 20px; margin-bottom: 12px;">@shrimpTails_</div>
+    <img src="shrimptails-x-qr.png" alt="X profile QR code" style="width: 220px; height: 220px;">
+    <div style="font-size: 16px; margin-top: 10px;">x.com/shrimpTails_</div>
+  </div>
+</div>
