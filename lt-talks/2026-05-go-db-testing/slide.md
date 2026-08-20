@@ -42,7 +42,7 @@ html: true
   - 2021年9月 入社（現職）
   - エンジニア 5年目
 - 技術
-  - Open/Web系の業務アプリのバックエンドがメイン
+  - Web系の業務アプリのバックエンド開発がメイン
   - 言語,F/W: Go / Laravel / Rails / React.ts
   - DB: MySQL,PostgreSQL
   - クラウド/インフラ: AWS
